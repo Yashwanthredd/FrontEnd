@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product CRUD Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Product CRUD Dashboard</h1>
+    
+    <!-- Product Creation Form -->
+    <div id="product-form">
+      <h2>Add Product</h2>
+      <form id="createProductForm">
+        <input type="text" id="name" placeholder="Product Name" required>
+        <textarea id="description" placeholder="Description" required></textarea>
+        <input type="number" id="price" placeholder="Price" required>
+        <input type="number" id="quantity" placeholder="Quantity" required>
+        <input type="text" id="category" placeholder="Category (optional)">
+        <input type="url" id="imageUrl" placeholder="Image URL (optional)">
+        <button type="submit">Add Product</button>
+      </form>
+    </div>
+    
+    <!-- Product Listing -->
+    <div id="product-list">
+      <h2>Product List</h2>
+      <input type="text" id="search" placeholder="Search by name or category">
+      <table>
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Category</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="productTable">
+          <!-- Products will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
